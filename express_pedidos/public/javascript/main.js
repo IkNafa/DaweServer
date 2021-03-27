@@ -69,7 +69,7 @@ function enviar(){
         
         for(let i=1; i<resp.length; i++){
             const imagen = `<img src=${resp[i].file} width="100" height="100"/>`;
-            console.log(imagen);
+            console.log(resp[i].file);
             log(imagen);
         }
     })

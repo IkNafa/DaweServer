@@ -5,7 +5,7 @@ const path = require('path');
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, '/home/dawe/node_js/public/pedidos/images')
+        cb(null, 'public/images/')
     },
     filename: function (req, file, cb) {
         cb(null, file.originalname)
@@ -35,7 +35,7 @@ router.post('/add', pedido, (req,res) => {
     let index, len;
     for(index=0, len= files.length; index<len; ++index){
         result.push({
-            file: req.files[index].path.replace("/home/dawe/node_js/public","")
+            file: req.files[index].path.replace("public","")
         });
     }
 
