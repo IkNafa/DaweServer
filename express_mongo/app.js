@@ -133,7 +133,7 @@ app.post('/users/edit/:id', function(req,res){
         console.log(newUser);
         console.log( ObjectId(req.params.id));
 
-        db.users.update({"_id": ObjectId(req.params.id)},{$push: newUser}, function( err, resp ) {
+        db.users.update({"_id": ObjectId(req.params.id)},newUser, function( err, resp ) {
             if (err) {
                 console.log(err);
             } else {
