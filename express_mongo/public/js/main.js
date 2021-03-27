@@ -8,8 +8,8 @@ function getUserForm(){
 		var user = resp[0];
 
 		$('input[name="first_name"]').val(user.first_name);
-		$('input[name="last_name"]').val(user.first_name);
-		$('input[name="email"]').val(user.first_name);
+		$('input[name="last_name"]').val(user.last_name);
+		$('input[name="email"]').val(user.email);
 		$('input[name="id"]').val(user._id);
 
 		$('#formEdit').show();

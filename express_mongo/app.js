@@ -60,6 +60,7 @@ app.get("/", function(req, res) {
         if (err) {
             console.log(err);
         } else {
+            console.log(docs);
             res.render('index', {
                 title:'Customers',
                 users: docs,
@@ -77,11 +78,8 @@ app.post("/users/add", function(req, res) {
 
     req.checkBody("email", "El email es obligatorio").notEmpty();
 
-    console.log("Hola");
 
     var errors = req.validationErrors();
-
-    console.log(errors);
 
     if (errors) {
 
@@ -90,14 +88,13 @@ app.post("/users/add", function(req, res) {
                     errors: errors
         }); 
     }else{
-        console.log("No hay errores");
-        var newUser = {
-            "first_name" : req.body.first_name,
-            "last_name" : req.body.last_name,
-            "email" : req.body.email
-        };
 
-        console.log(newUser);
+            var newUser = {
+                "first_name" : req.body.first_name,
+                "last_name" : req.body.last_name,
+                "email" : req.body.email
+            };
+
         db.users.insert( newUser, function( err, resp ) {
             if (err) {
                 console.log(err);
@@ -106,14 +103,47 @@ app.post("/users/add", function(req, res) {
             }
 
         });
-        
-        res.redirect('/');
+
     }
 
-
-
+    res.redirect('/');
 });
 
+app.post('/users/edit', function(req,res){
+    req.checkBody("first_name", "El nombre es obligatorio").notEmpty();
+    req.checkBody("last_name", "El apellido es obligatorio").notEmpty();
+
+    req.checkBody("email", "El email es obligatorio").notEmpty();
+
+    var errors = req.validationErrors();
+
+    if (errors) {
+
+        res.render('index', {
+                    title:'Customers',
+                    errors: errors
+        }); 
+    }else{
+        var filter = {
+            '_id': ObjectId(req.body._id),
+        }
+        var newUser = {
+            "first_name" : req.body.first_name,
+            "last_name" : req.body.last_name,
+            "email" : req.body.email
+        };
+
+        db.users.update(filter,newUser, function( err, resp ) {
+            if (err) {
+                console.log(err);
+            } else {
+                db.users.insert( filter,newUser );
+            }
+
+        });
+    }
+
+});
 
 app.delete('/users/delete/:id', function(req, res){
 	// console.log(req.params.id);
