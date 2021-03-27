@@ -142,6 +142,7 @@ app.post('/users/edit', function(req,res){
 
         });
     }
+    res.redirect('/');
 
 });
 
