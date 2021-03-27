@@ -14,7 +14,7 @@ function getUserForm(){
 
 		$('#formEdit').show();
 		$('#formEdit').get(0).setAttribute('action', `/users/edit/${user._id}`);
-		$('#formEdit').get(0).setAttribute('method', "PUT");
+		$('#formEdit').get(0).setAttribute('method', "POST");
 		$('#form').hide();
 
 	});
