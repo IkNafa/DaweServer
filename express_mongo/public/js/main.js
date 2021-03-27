@@ -1,10 +1,6 @@
-var mode;
-
 $(document).ready(function(){
 	$('.deleteUser').on('click', deleteUser);
 	$('.editUser').on('click', getUserForm);
-	$('[name="submit"]').on('click', addUser);
-	$('[name="edit"]').on('click', editUser);
 });
 
 function getUserForm(){
@@ -16,31 +12,10 @@ function getUserForm(){
 		$('input[name="email"]').val(user.first_name);
 		$('input[name="id"]').val(user._id);
 
-		mode = 1;
-
-		$('[name="edit"]').show();
-		$('[name="submit"]').hide();
+		$('#formEdit').show();
+		$('#form').hide();
 
 	});
-}
-
-function addUser(){
-	var formData = new FormData(document.getElementById("form"));
-	console.log(formData);
-	const url = '/users/add'
-	fetch(url,{
-		method: 'POST',
-		body: formData
-	})
-}
-
-function editUser(){
-	var formData = new FormData(document.getElementById("form"));
-	const url = '/users/edit'
-	fetch(url,{
-		method: 'POST',
-		body: formData
-	})
 }
 
 function deleteUser(){
