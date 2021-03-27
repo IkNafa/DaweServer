@@ -108,7 +108,7 @@ app.post("/users/add", function(req, res) {
     res.redirect('/');
 });
 
-app.put('/users/edit/:id', function(req,res){
+app.post('/users/edit/:id', function(req,res){
     req.checkBody("first_name", "El nombre es obligatorio").notEmpty();
     req.checkBody("last_name", "El apellido es obligatorio").notEmpty();
 
