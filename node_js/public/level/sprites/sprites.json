@@ -1,0 +1,19 @@
+{
+	"imageURL":  "img/pang.gif",
+	"tileW": 8,
+	"tileH": 8,
+
+	"tiles": [
+		{
+			"name": "ground",
+			"index":  [0,0]
+
+		},
+		{
+			"name": "sky",
+			"index":  [0,1]
+
+		}
+	]
+
+}

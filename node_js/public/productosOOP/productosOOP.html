@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<script src="oop/productos.js"></script>
+		<script src="oop/discos.js"></script>
+		<script src="oop/libros.js"></script>
+		<script>
+			// modularización
+			var libro1 = new Libro("Dublinés", "Alfonso Zapico", 18);
+			var libro2 = new Libro("El arte de volar","Antonio Altarriba y Kim",20.90);
+			var disco1 = new Disco("Próxima estación: Esperanza", "Manu Chao", 15, "CD");
+
+			var tienda = [];
+			tienda.push(libro1, libro2, disco1);
+
+			window.onload = function()
+			{
+				var imprimirListado = document.getElementById('listado');
+				for (producto in tienda)
+				{
+					var capa = document.createElement('div');
+					capa.innerHTML = tienda[producto].mostrar();
+					imprimirListado.appendChild(capa);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="listado">
+
+		</div>
+	</body>
+</html>

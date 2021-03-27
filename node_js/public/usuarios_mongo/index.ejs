@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Simple Customer Management System</title>
+		<script
+		  src="https://code.jquery.com/jquery-2.2.4.js"
+		  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+		  crossorigin="anonymous"></script>
+		<script src="/usuarios_mongo/main.js"></script>
+
+	</head>
+	<body>
+
+<h1>Insertar cliente</h1>
+
+<ul>
+	<% if (errors){ %>
+	<% errors.forEach( function(error) { %>
+		<li><%=error.msg %> </li>
+	<% }) %>
+	<% } %>
+</ul>
+
+
+<form method="POST" action="/users/add" id="form">
+	<label>Nombre</label>
+	<input type="text" name="first_name">
+	<br>
+	<label>Apellido</label>
+	<input type="text" name="last_name">
+	<br>
+	<label>Email</label>
+	<input type="text" name="email">
+	<br>
+	 <input type="submit" value="Enviar" name="submit">
+</form>
+
+<% if (!errors) { %>
+<h1><%=title %></h1>
+<ul>
+<%  users.forEach( function(user) { %>
+<li><%=user.first_name %> <%= user.last_name%> - <a href="#" class="deleteUser" data-id="<%= user._id %>">Delete</a> </li>
+<% }) } %>
+</ul>
+
+</body>
+</html>

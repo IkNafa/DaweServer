@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+
+        #form{
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+
+        .datosCliente input{
+            width: 300px;
+        }
+
+        .libros input[type="number"]{
+            width: 3em;
+        }
+
+        #dropbox{
+            width: 100%;
+            font-weight: bold;
+            text-align: center;
+            padding: 2em 0;
+            color: #555;
+            border: 2px dashed #555;
+	        border-radius: 7px;
+	        cursor: default;
+        }
+
+        #dropbox.hover{
+            color: #f00;
+            border-color: #f00;
+            border-style: solid;
+            box-shadow: inset 0 3px 4px #888;
+        }
+
+        #mensajes{
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+
+    </style>
+    <script src="/pedidos/main.js"></script>
+</head>
+<body>
+    <form name="formulario" id="form" method="POST" enctype="multipart/form-data">
+        <fieldset class="datosCliente">
+            <legend>Datos del cliente</legend>
+            Nombre: <input type="text" name="name" id="name" placeholder="Introduce tu nombre" autofocus><br><br>
+            Tel&eacute;fono: <input type="tel" name="tel" id="tel" placeholder="Patrón: 123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>
+            E-mail: <input type="email" name="email" id="email" placeholder="Introduce tu dirección de correo electrónico">
+        </fieldset>
+        <fieldset class="libros">
+            <legend>Libros</legend>
+            Cantidad (M&aacute;x. 5): <input type="number" name="numBook" id="numBook" min="1" max="5" step="1">
+        </fieldset><br>
+        <div>
+            <input type="file" id="fileselect" name="fileselect" multiple hidden/>
+            <div id="dropbox">arrastra aquí tus ficheros</div>
+        </div>
+        <br>
+        <input type="button" onclick="enviar()" value="Enviar">
+    </form><br>
+    <div id="mensajes"></div>
+</body>
+</html>

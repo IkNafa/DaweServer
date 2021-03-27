@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Comunicaci&oacute;n de datos</title>
+
+    <script>
+
+        function getBookData(){
+            var selection = document.getElementById("ISBN");
+            isbn = selection.options[selection.selectedIndex].text;
+            url ="https://openlibrary.org/api/books?bibkeys=ISBN:" + isbn + "&jscmd=details&format=json";
+
+            fetch(url).then(r1 => r1.json()).then(r1 => {
+                titulo = r1["ISBN:" + isbn].details.title;
+                autor = r1["ISBN:" + isbn].details.authors[0].name;
+                numPags = r1["ISBN:" + isbn].details.number_of_pages;
+                img_url = r1["ISBN:" + isbn].thumbnail_url.replace("-S","-L");
+
+                document.getElementById("book-container").hidden = false;
+
+                document.getElementById("titulo").innerHTML = `<h1>${titulo}</h1>`;
+                document.getElementById("autor").innerHTML = `Autor: <b>${autor}</b>`;
+                document.getElementById("numPags").innerHTML = `N&uacute;mero de p&aacute;ginas: <b>${numPags}</b>`;
+
+                loadImage(img_url).then(image => {
+                    console.log(image.outerHTML);
+                    document.getElementById("book").innerHTML = image.outerHTML;
+                })
+
+            });
+        }
+
+        function loadImage(url){
+            return new Promise(resolve =>{
+                const image = new Image();
+                image.addEventListener('load', () => resolve(image));
+                image.src = url;
+            })
+        }
+
+
+    </script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #f5683d;
+            padding-top: 20vh;
+        }
+
+        .form-container{
+            width:250px;
+            height: auto;
+            padding: 40px 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 #000;
+            margin: auto;
+            position: relative;
+        }
+
+        .book-img{
+            background: url('/comunicacion/book.png') no-repeat;
+            width: 70px;
+            height: 70px;
+            background-size: 100%;
+            position: absolute;
+            top: -40px;
+            left: 120px;
+        }
+
+        ul.list{
+            list-style-type: none;
+            text-align: center;
+        }
+
+        ul.list li{
+            width: 250px;
+            margin-bottom: 15px;
+        }
+
+        ul.list li input{
+            width: 250px;
+            padding: 8px 0px;
+            border:none;
+            background-color: #d3d3d3;
+            border-radius: 5px;
+        }
+
+        ul.list li select{
+            width: 250px;
+            padding: 8px 0px;
+            border:none;
+            background-color: #d3d3d3;
+            border-radius: 5px;
+
+        }
+
+        ul.list li input[type="button"]{
+            background-color: #4690fb;
+            color: #fff;
+        }
+
+        ul.list li input[type="button"]:active{
+            background-color: #57A1fc;
+        }
+
+        .book-container{
+            width: 600px;
+            height: 575px;
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 #000;
+            background-color: #fff;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+
+        .book{
+            float: left;
+            margin-top: 20px;
+            width: 300px;
+            height: 350px;
+        }
+
+        ul.data{
+            margin-top: 20px;
+            list-style-type: none;
+            text-align: right;
+            font-size: 18px;
+        }
+
+        ul.data li{
+            padding: 8px 0px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="form-container">
+        <div class="book-img"></div>
+        <ul class="list">
+            <li><h2>OPEN LIBRARY</h2></li>
+            <li>
+                <select name="ISBN" id="ISBN">
+                    <option disabled selected>Selecciona un ISBN</option>
+                    <option>9781491920497</option>
+                    <option>1491910399</option>
+                    <option>1491946008</option>
+                    <option>1491978236</option>
+                    <option>9781491906187</option>
+                </select>  
+            </li>
+            <li><input type="button" value="Obtener datos del libro" onclick="getBookData()"/></li>
+        </ul>
+
+    </div>
+
+    <div class="book-container" id="book-container" hidden="true">
+        <div id="titulo" style="text-align: center;"></div>
+        <div class="book" id="book"></div>
+        <ul class="data">
+            <li id="autor"></li>
+            <li id="numPags"></li>
+        </ul>
+    </div>
+</body>
+</html>
