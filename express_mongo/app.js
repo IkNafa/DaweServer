@@ -140,6 +140,16 @@ app.delete('/users/delete/:id', function(req, res){
 	});
 });
 
+app.get('/users/find/:id', function(req,res){
+	db.users.find({_id:ObjectId(req.params.id)}, function(err, result){
+		if(err){
+			console.log(err);
+		}else{
+			res.send(result);
+		}
+	});
+});
+
 
 app.listen(3002, function(){
     console.log("Servidor lanzado en el puerto 3002");

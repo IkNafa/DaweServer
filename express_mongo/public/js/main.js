@@ -1,9 +1,15 @@
 $(document).ready(function(){
 	$('.deleteUser').on('click', deleteUser);
+	$('.editUser').on('click', getUserForm);
 });
 
-function editUser(evt){
-	let user = evt.target.data('user');
+function getUserForm(){
+	fetch('/users/find/'+$(this).data('id')).then(resp => resp.json()).then(resp => {
+		                console.log(resp);
+		        });
+}
+
+function editUser(user){
 	console.log(user);
 }
 
