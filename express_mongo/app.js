@@ -129,8 +129,7 @@ app.post('/users/edit', function(req,res){
             "last_name" : req.body.last_name,
             "email" : req.body.email
         };
-
-        console.log(filter);
+        
         console.log(newUser);
 
         db.users.update({_id: ObjectId(req.body._id)},newUser, function( err, resp ) {
