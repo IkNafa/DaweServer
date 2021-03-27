@@ -1,6 +1,12 @@
 $(document).ready(function(){
 	$('.deleteUser').on('click', deleteUser);
+	document.getElementById('editUser').onclick = edituser;
 });
+
+function editUser(evt){
+	let user = evt.target.data('user');
+	console.log(user);
+}
 
 function deleteUser(){
 

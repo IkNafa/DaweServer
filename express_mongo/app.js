@@ -70,6 +70,7 @@ app.get("/", function(req, res) {
     });
 });
 
+
 app.post("/users/add", function(req, res) {
 
     req.checkBody("first_name", "El nombre es obligatorio").notEmpty();
@@ -108,6 +109,25 @@ app.post("/users/add", function(req, res) {
             res.redirect('/');
 });
 
+app.post('/users/edit', function(req,res){
+    req.checkBody("first_name", "El nombre es obligatorio").notEmpty();
+    req.checkBody("last_name", "El apellido es obligatorio").notEmpty();
+
+    req.checkBody("email", "El email es obligatorio").notEmpty();
+
+    var errors = req.validationErrors();
+
+    if (errors) {
+
+        res.render('index', {
+                    title:'Customers',
+                    errors: errors
+        }); 
+    }else{
+        var idUser = req.body._id;
+    }
+
+});
 
 app.delete('/users/delete/:id', function(req, res){
 	// console.log(req.params.id);
