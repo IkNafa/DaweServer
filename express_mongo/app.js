@@ -129,14 +129,15 @@ app.post('/users/edit', function(req,res){
             "last_name" : req.body.last_name,
             "email" : req.body.email
         };
-        
+
         console.log(newUser);
 
         db.users.update({_id: ObjectId(req.body._id)},newUser, function( err, resp ) {
             if (err) {
                 console.log(err);
             } else {
-                db.users.update( {_id: ObjectId(req.body._id)},newUser );
+                console.log(resp);
+                //db.users.update( {_id: ObjectId(req.body._id)},newUser );
             }
 
         });
