@@ -77,8 +77,11 @@ app.post("/users/add", function(req, res) {
 
     req.checkBody("email", "El email es obligatorio").notEmpty();
 
+    console.log("Hola");
 
     var errors = req.validationErrors();
+
+    console.log(errors);
 
     if (errors) {
 
@@ -87,13 +90,14 @@ app.post("/users/add", function(req, res) {
                     errors: errors
         }); 
     }else{
+        console.log("No hay errores");
+        var newUser = {
+            "first_name" : req.body.first_name,
+            "last_name" : req.body.last_name,
+            "email" : req.body.email
+        };
 
-            var newUser = {
-                "first_name" : req.body.first_name,
-                "last_name" : req.body.last_name,
-                "email" : req.body.email
-            };
-
+        console.log(newUser);
         db.users.insert( newUser, function( err, resp ) {
             if (err) {
                 console.log(err);
