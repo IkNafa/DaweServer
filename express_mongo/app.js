@@ -60,7 +60,6 @@ app.get("/", function(req, res) {
         if (err) {
             console.log(err);
         } else {
-            console.log(docs);
             res.render('index', {
                 title:'Customers',
                 users: docs,
@@ -123,6 +122,7 @@ app.post('/users/edit', function(req,res){
                     title:'Customers',
                     errors: errors
         }); 
+        console.log(errors)
     }else{
         var filter = {
             '_id': ObjectId(req.body._id),
@@ -132,6 +132,9 @@ app.post('/users/edit', function(req,res){
             "last_name" : req.body.last_name,
             "email" : req.body.email
         };
+
+        console.log(filter);
+        console.log(newUser);
 
         db.users.update(filter,newUser, function( err, resp ) {
             if (err) {
