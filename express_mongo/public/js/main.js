@@ -26,6 +26,7 @@ function getUserForm(){
 
 function addUser(){
 	var formData = new FormData(document.getElementById("form"));
+	console.log(formData);
 	const url = '/users/add'
 	fetch(url,{
 		method: 'POST',
