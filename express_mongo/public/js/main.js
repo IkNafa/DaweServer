@@ -12,7 +12,8 @@ function getUserForm(){
 		$('input[name="email"]').val(user.email);
 		$('input[name="id"]').val(user._id);
 
-		$('#formEdit').show().attr('action', `/users/edit/${user._id}`);
+		$('#formEdit').show();
+		$('#formEdit').get(0).setAttribute('action', `/users/edit/${user._id}`)
 		$('#form').hide();
 
 	});
