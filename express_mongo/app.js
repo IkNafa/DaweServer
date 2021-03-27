@@ -137,7 +137,7 @@ app.post('/users/edit', function(req,res){
             if (err) {
                 console.log(err);
             } else {
-                db.users.update( filter,newUser );
+                db.users.update( {_id: ObjectId(req.body._id)},newUser );
             }
 
         });
