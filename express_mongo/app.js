@@ -137,7 +137,7 @@ app.post('/users/edit', function(req,res){
             if (err) {
                 console.log(err);
             } else {
-                db.users.insert( filter,newUser );
+                db.users.update( filter,newUser );
             }
 
         });
