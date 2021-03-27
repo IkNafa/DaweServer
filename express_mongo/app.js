@@ -132,6 +132,15 @@ app.post('/users/edit', function(req,res){
 
         console.log(newUser);
         console.log( ObjectId(req.body._id));
+
+        db.users.find({"_id": ObjectId(req.body._id)}, function(err,resp){
+            if(err){
+                console.log(err);
+            }else{
+                console.log(resp);
+            }
+        });
+
         db.users.update({"_id": ObjectId(req.body._id)},{$push: newUser}, function( err, resp ) {
             if (err) {
                 console.log(err);
