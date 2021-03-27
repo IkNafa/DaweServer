@@ -107,9 +107,9 @@ app.post("/users/add", function(req, res) {
 
         });
         
-       
+        res.redirect('/');
     }
-    res.redirect('/');
+
 
 
 });
