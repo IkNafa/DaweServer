@@ -13,6 +13,7 @@ function getUserForm(){
 		$('input[name="id"]').val(user._id);
 
 		$('#formEdit').show();
+		console.log($('#formEdit').attr('action'));
 		$('#formEdit').get(0).setAttribute('action', `/users/edit/${user._id}`)
 		$('#form').hide();
 
