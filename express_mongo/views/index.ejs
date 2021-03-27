@@ -11,7 +11,8 @@
 </ul>
 
 
-<form method="POST" action="/users/add" id="form">
+<form id="form">
+	<input type="text" name="id" hidden>
 	<label>Nombre</label>
 	<input type="text" name="first_name">
 	<br>
@@ -21,7 +22,8 @@
 	<label>Email</label>
 	<input type="text" name="email">
 	<br>
-	 <input type="submit" value="Enviar" name="submit">
+	 <input type="button" value="Enviar" name="submit">
+	 <input type="button" value="Editar" name="edit">
 </form>
 
 <% if (!errors) { %>
