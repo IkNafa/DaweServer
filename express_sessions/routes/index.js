@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var admin = require('firebase-admin');
-var session = require('express-session');
-const MongoStore = require('connect-mongo')(session);
+const session = require('express-session');
+const MongoStore = require('connect-mongo');
 
-var serviceAccount = require('secrets/serviceAccountKey.json');
+var serviceAccount = require('./secrets/serviceAccountKey.json');
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
@@ -16,7 +16,7 @@ router.use(session({
   saveUninitialized: true, // create session even if there is nothing stored
   resave: true, // save session even if unmodified
   cookie: { maxAge: 60 * 60 * 1000 },
-  store: new MongoStore({ url: 'mongodb://127.0.0.1:27017/test-app'})
+  store: MongoStore.create({ mongoUrl: 'mongodb://localhost/test-app' })
 }));
 
 
