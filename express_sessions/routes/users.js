@@ -23,7 +23,7 @@ router.get("/", function(req, res) {
 
 });
 
-route.post("/users/add", function(req, res) {
+router.post("/users/add", function(req, res) {
 
   if(req.session.email){
 
@@ -68,7 +68,7 @@ route.post("/users/add", function(req, res) {
 
 });
 
-route.post('/users/edit/:id', function(req,res){
+router.post('/users/edit/:id', function(req,res){
 
   if(req.session.email){
     req.checkBody("first_name", "El nombre es obligatorio").notEmpty();
@@ -111,7 +111,7 @@ route.post('/users/edit/:id', function(req,res){
   }
 });
 
-route.delete('/users/delete/:id', function(req, res){
+router.delete('/users/delete/:id', function(req, res){
 	if(req.session.email){
     db.users.remove({_id: ObjectId(req.params.id)}, function(err, result){
       if (err){
@@ -125,7 +125,7 @@ route.delete('/users/delete/:id', function(req, res){
   }
 });
 
-route.get('/users/find/:id', function(req,res){
+router.get('/users/find/:id', function(req,res){
   if(req.session.email){
     db.users.find({_id:ObjectId(req.params.id)}, function(err, result){
       if(err){
