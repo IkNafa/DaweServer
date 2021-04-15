@@ -25,7 +25,7 @@ router.get('/',(req,res) => {
   if(req.session.email) {
     return res.redirect('/users/');
   }
-  res.sendFile(path.join(__dirname+'/email-password.html'));
+  res.sendFile(path.join(__dirname + '/../public/email-password.html'));
 });
 
 router.post('/login',(req,res) => {
