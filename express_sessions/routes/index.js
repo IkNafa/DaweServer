@@ -88,7 +88,7 @@ router.get('/logout',(req,res) => {
 
 router.post('/getToken', (req, res) => {
   const idToken = req.body.idToken; // capturar parámetro
-
+  console.log('/getToken');
 // idToken comes from the client app
 // verificamos el idToken para ver si es válido
   admin.auth().verifyIdToken(idToken)
