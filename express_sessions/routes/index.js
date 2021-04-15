@@ -22,9 +22,9 @@ router.use(session({
 
 router.get('/',(req,res) => {
   if(req.session.email) {
-    return res.redirect('/admin');
+    return res.redirect('/users/');
   }
-  res.render('index', { title : 'title'});
+  res.sendFile(path.join(__dirname+'/email-password.html'));
 });
 
 router.post('/login',(req,res) => {
@@ -32,16 +32,16 @@ router.post('/login',(req,res) => {
   res.end('done');
 });
 
-router.get('/admin',(req,res) => {
-  if(req.session.email) {
-    res.write(`<h1>Hello ${req.session.email} </h1><br>`);
-    res.end('<a href='+'/logout'+'>Logout</a>');
-  }
-  else {
-    res.write('<h1>Please login first.</h1>');
-    res.end('<a href='+'/'+'>Login</a>');
-  }
-});
+// router.get('/admin',(req,res) => {
+//   if(req.session.email) {
+//     res.write(`<h1>Hello ${req.session.email} </h1><br>`);
+//     res.end('<a href='+'/logout'+'>Logout</a>');
+//   }
+//   else {
+//     res.write('<h1>Please login first.</h1>');
+//     res.end('<a href='+'/'+'>Login</a>');
+//   }
+// });
 
 router.get('/logout',(req,res) => {
   req.session.destroy((err) => {
@@ -103,6 +103,7 @@ router.post('/getToken', (req, res) => {
               req.session.email = userRecord.email;
               req.session.emailVerified = userRecord.emailVerified;
                 res.send('{"status": "done"}');
+                res.redirect('/');
             })
             .catch(function(error) {
               console.log('Error fetching user data:', error);
