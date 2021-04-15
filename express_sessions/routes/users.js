@@ -16,6 +16,7 @@ router.get("/", function(req, res) {
           console.log(err);
       } else {
           res.render('index', {
+              username:'Iker',
               title:'Customers',
               users: docs,
           }); 
@@ -43,6 +44,7 @@ router.post("/users/add", function(req, res) {
     if (errors) {
 
         res.render('index', {
+                    username:'Iker',
                     title:'Customers',
                     errors: errors
         }); 
@@ -86,6 +88,7 @@ router.post('/users/edit/:id', function(req,res){
     if (errors) {
 
         res.render('index', {
+                    username:'Iker',
                     title:'Customers',
                     errors: errors
         }); 
