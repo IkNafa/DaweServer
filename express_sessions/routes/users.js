@@ -5,6 +5,35 @@ var ObjectId = mongojs.ObjectId;
 
 var db = mongojs('clientesapp', ['users'])
 
+// Middleware
+router.use(express.static(path.join(__dirname,'public')));
+
+// View Engine
+router.set('view engine', 'ejs');
+router.set('views', path.join(__dirname, 'views'));
+
+// Middleware para el parseo de req.body
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({extended: false}));
+
+// express validator middleware
+router.use(expressValidator({
+	errorFormatter: function(param, msg, value) {
+		var namespace = param.split('.')
+		, root = namespace.shift()
+		, formParam = root;
+
+		while (namespace.length) {
+			forParam += '[' + namespace.shift() + ']';
+		}
+		return {
+			param : formParam,
+			msg: msg,
+			value: value
+		};
+	}
+}));
+
 // enrutamiento
 router.get("/", function(req, res) {
   // res.send("Hello World!");
