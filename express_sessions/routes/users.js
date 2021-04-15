@@ -3,6 +3,8 @@ var router = express.Router();
 var mongojs = require('mongojs')
 var ObjectId = mongojs.ObjectId;
 
+var db = mongojs('clientesapp', ['users'])
+
 // enrutamiento
 router.get("/", function(req, res) {
   // res.send("Hello World!");
