@@ -3,6 +3,7 @@ var router = express.Router();
 var admin = require('firebase-admin');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
+var path = require("path");
 
 var serviceAccount = require('./secrets/serviceAccountKey.json');
 

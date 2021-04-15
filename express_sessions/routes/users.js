@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var mongojs = require('mongojs')
+var ObjectId = mongojs.ObjectId;
 
 // enrutamiento
 router.get("/", function(req, res) {
