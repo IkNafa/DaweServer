@@ -1,0 +1,9 @@
+
+> express_mongo@1.0.0 start
+> node app.js
+
+Servidor lanzado en el puerto 3002
+{ first_name: 'fdfdf', last_name: 'sdf', email: 'sdrfg' }
+605f23dcbec985311e782cb0
+(node:12962) [DEP0079] DeprecationWarning: Custom inspection function on Objects via .inspect() is deprecated
+{ n: 1, nModified: 1, ok: 1 }
