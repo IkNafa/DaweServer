@@ -104,7 +104,6 @@ router.post('/getToken', (req, res) => {
               req.session.email = userRecord.email;
               req.session.emailVerified = userRecord.emailVerified;
                 res.send('{"status": "done"}');
-                res.redirect('/');
             })
             .catch(function(error) {
               console.log('Error fetching user data:', error);
