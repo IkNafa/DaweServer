@@ -31,6 +31,7 @@ router.get('/',(req,res) => {
 router.post('/login',(req,res) => {
   req.session.email = req.body.email;
   res.end('done');
+  res.redirect('/');
 });
 
 // router.get('/admin',(req,res) => {
