@@ -8,7 +8,6 @@ var db = mongojs('clientesapp', ['users'])
 
 // enrutamiento
 router.get("/", function(req, res) {
-  // res.send("Hello World!");
   if(req.session.email) {
     db.users.find( function(err, docs) {
 
@@ -16,7 +15,7 @@ router.get("/", function(req, res) {
           console.log(err);
       } else {
           res.render('index', {
-              username:'Iker',
+              username: req.session.email,
               title:'Customers',
               users: docs,
           }); 
@@ -44,7 +43,7 @@ router.post("/users/add", function(req, res) {
     if (errors) {
 
         res.render('index', {
-                    username:'Iker',
+                    username: req.session.email,
                     title:'Customers',
                     errors: errors
         }); 
@@ -88,7 +87,7 @@ router.post('/users/edit/:id', function(req,res){
     if (errors) {
 
         res.render('index', {
-                    username:'Iker',
+                    username: req.session.email,
                     title:'Customers',
                     errors: errors
         }); 
