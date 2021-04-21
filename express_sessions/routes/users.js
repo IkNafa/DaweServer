@@ -18,6 +18,7 @@ router.get("/", function(req, res) {
               username: req.session.email,
               title:'Customers',
               users: docs,
+              errors:false,
           }); 
       }
       
