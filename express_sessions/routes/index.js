@@ -49,7 +49,6 @@ router.get('/logout',(req,res) => {
     if(err) {
       return console.log(err);
     }else{
-      req.end();
       res.redirect('/');
     }
   });
