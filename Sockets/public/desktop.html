@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pang</title>
+
+    <script>
+
+        class Lupa{
+            constructor(width, height, lineWidth, maxWidth, maxHeight, canvas){
+                this.x = lineWidth;
+                this.y = lineWidth;
+
+                this.width = width;
+                this.height = height;
+
+                this.maxWidth = maxWidth;
+                this.maxHeight = maxHeight;
+
+                this.canvas = canvas;
+                this.ctx = canvas.getContext("2d");
+
+                this.spritesheet = new Image();
+                this.spritesheet.src = "/canvas_pang/spritesheet.png";
+
+                this.lineWidth = lineWidth;
+
+                this.draw();
+            }
+
+            moveLeft(){
+                if(this.x > this.lineWidth){
+                    this.x--;
+                    this.draw();
+                }
+            }
+
+            moveRight(){
+                if(this.x + this.width < this.maxWidth - this.lineWidth){
+                    this.x++;
+                    this.draw();
+                }
+            }
+
+            moveUp(){
+                if(this.y > this.lineWidth){
+                    this.y--;
+                    this.draw();
+                }
+            }
+
+            moveDown(){
+                if(this.y + this.height < this.maxHeight - this.lineWidth){
+                    this.y++;
+                    this.draw();
+                }
+            }
+
+            draw(){
+                this.ctx.clearRect(0,0,this.canvas.width,this.canvas.height);
+
+                if(this.spritesheet.complete && this.spritesheet.naturalHeight !== 0){
+                    this.drawCanvas();
+                }else{
+                    this.spritesheet.onload = () => {
+                        this.drawCanvas();
+                    }
+                }
+            }
+
+            drawCanvas(){
+                this.ctx.drawImage(this.spritesheet,0,0);
+                this.ctx.strokeStyle= "red";
+                this.ctx.lineWidth=this.lineWidth;
+
+                this.ctx.strokeRect(this.x,this.y,28,39);
+
+                this.ctx.fillStyle = "red";
+                this.ctx.font = "bold 19px Arial";
+                this.ctx.textAlign = "right";
+                this.ctx.textBaseline = "top";
+                this.ctx.fillText(`(${this.x},${this.y})`, this.maxWidth,0);
+
+                this.ctx.drawImage(this.spritesheet,this.x, this.y, this.width, this.height, this.maxWidth + 25, 0, this.width*2,this.height*2);
+            }
+        }
+
+
+        var lupa;
+
+        window.onload = () => {
+            var canvas = document.getElementById("canvas");
+            lupa = new Lupa(28,39,2,476,480, canvas);
+        }
+
+        window.addEventListener("keydown", (event)=>{
+            let char = event.char || event.charCode || event.which;
+            if(char >=37 && char <= 40){
+                event.preventDefault();
+                switch(char){
+                    case 37:
+                        lupa.moveLeft();
+                        break;
+                    case 38:
+                        lupa.moveUp();
+                        break;
+                    case 39:
+                        lupa.moveRight();
+                        break;
+                    case 40:
+                        lupa.moveDown();
+                        break;
+                }
+            }
+        })
+
+    </script>
+
+</head>
+<body>
+    <canvas id="canvas" width="800" height="800"></canvas>
+</body>
+</html>
