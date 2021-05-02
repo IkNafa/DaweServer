@@ -27,8 +27,6 @@
 
                 this.lineWidth = lineWidth;
 
-                this.serverURL = window.location.hostname + ":" +  window.location.port;
-
                 this.draw();
             }
 
@@ -87,24 +85,22 @@
 
                 this.ctx.drawImage(this.spritesheet,this.x, this.y, this.width, this.height, this.maxWidth + 25, 0, this.width*2,this.height*2);
             }
-
-            loadSockets(){
-                this.socket = io.connect(this.serverURL, {secure: false});
-                // register phone connection
-                socket.emit('desktop-connect');
-                this.socket.on("phone-move",function(data) {
-                    console.log("Ha llegado mensaje: " + data);
-                });
-            }
         }
 
 
         var lupa;
 
         window.onload = () => {
+            serverURL = window.location.hostname + ":" +  window.location.port;
+            socket = io.connect(serverURL, {secure: false});
+            // register phone connection
+            socket.emit('desktop-connect');
+            socket.on("phone-move",function(data) {
+                console.log("Ha llegado mensaje: " + data);
+            });
+
             var canvas = document.getElementById("canvas");
             lupa = new Lupa(28,39,2,476,480, canvas);
-            lupa.loadSockets();
         }
 
         window.addEventListener("keydown", (event)=>{
