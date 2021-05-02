@@ -53,6 +53,7 @@ const realtimeListener = io.listen(server);
 
 // object to store desktop sockets
 let desktopSocket = null;
+let mobileSocket = null;
 
 // the socket can be a phone or a desktop
 realtimeListener.on('connection', function (socket) {
@@ -66,6 +67,7 @@ realtimeListener.on('connection', function (socket) {
   // receives a connect message from a phone
   socket.on("phone-connect", function () {
     console.log("Phone Connected");
+    mobileSocket = socket;
     if (desktopSocket) {
       // ... informs desktop that a phone has connected
       desktopSocket.emit('phone-connect');
@@ -77,6 +79,13 @@ realtimeListener.on('connection', function (socket) {
     console.log("Phone moved:" + data.beta  );
     if (desktopSocket)
       desktopSocket.emit('phone-move', data.beta);
+  });
+
+  socket.on("crash",function (){
+    console.log("Hay crush");
+    if(mobileSocket) {
+      mobileSocket.emit('crash');
+    }
   });
 });
 

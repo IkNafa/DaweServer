@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pang</title>
-
+    <script src="/socket.io/socket.io.js"></script>
     <script>
+
+        var socket = null;
 
         class Lupa{
             constructor(width, height, lineWidth, maxWidth, maxHeight, canvas){
@@ -23,7 +25,7 @@
                 this.ctx = canvas.getContext("2d");
 
                 this.spritesheet = new Image();
-                this.spritesheet.src = "/canvas_pang/spritesheet.png";
+                this.spritesheet.src = "./spritesheet.png";
 
                 this.lineWidth = lineWidth;
 
@@ -34,28 +36,36 @@
                 if(this.x > this.lineWidth){
                     this.x--;
                     this.draw();
+                    return true;
                 }
+                return false;
             }
 
             moveRight(){
                 if(this.x + this.width < this.maxWidth - this.lineWidth){
                     this.x++;
                     this.draw();
+                    return true;
                 }
+                return false;
             }
 
             moveUp(){
                 if(this.y > this.lineWidth){
                     this.y--;
                     this.draw();
+                    return true;
                 }
+                return false;
             }
 
             moveDown(){
                 if(this.y + this.height < this.maxHeight - this.lineWidth){
                     this.y++;
                     this.draw();
+                    return true;
                 }
+                return false;
             }
 
             draw(){
@@ -91,13 +101,13 @@
         var lupa;
 
         window.onload = () => {
-            serverURL = window.location.hostname + ":" +  window.location.port;
-            socket = io.connect(serverURL, {secure: false});
+            const serverURL = window.location.hostname + ":" +  window.location.port;
+            socket = io.connect(serverURL, {secure: true});
             // register phone connection
             socket.emit('desktop-connect');
             socket.on("phone-move",function(data) {
                 console.log("Ha llegado mensaje: " + data);
-            });
+            })
 
             var canvas = document.getElementById("canvas");
             lupa = new Lupa(28,39,2,476,480, canvas);
@@ -105,22 +115,27 @@
 
         window.addEventListener("keydown", (event)=>{
             let char = event.char || event.charCode || event.which;
+            let has_move = false;
             if(char >=37 && char <= 40){
                 event.preventDefault();
-                switch(char){
+                switch(char) {
                     case 37:
-                        lupa.moveLeft();
+                        has_move = lupa.moveLeft()
                         break;
                     case 38:
-                        lupa.moveUp();
+                        has_move = lupa.moveUp();
                         break;
                     case 39:
-                        lupa.moveRight();
+                        has_move = lupa.moveRight();
                         break;
                     case 40:
-                        lupa.moveDown();
+                        has_move = lupa.moveDown();
                         break;
                 }
+            }
+
+            if(!has_move){
+                socket.emit("crash");
             }
         })
 

@@ -7,6 +7,7 @@ window.onload = function(){
     socket.emit('phone-connect');
 
     socket.on('crash', function() {
+        console.log("VIBRANDOOOOOO");
         navigator.vibrate(500);
     });
 
