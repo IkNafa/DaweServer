@@ -104,6 +104,7 @@
         window.onload = () => {
             var canvas = document.getElementById("canvas");
             lupa = new Lupa(28,39,2,476,480, canvas);
+            lupa.loadSockets();
         }
 
         window.addEventListener("keydown", (event)=>{
