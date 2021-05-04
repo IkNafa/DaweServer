@@ -100,6 +100,7 @@
 
         window.onload = () => {
             const serverURL = window.location.hostname + ":" +  window.location.port;
+            console.log(serverURL);
             const socket = io.connect(serverURL, {secure: true});
             // register phone connection
             socket.emit('desktop-connect');
