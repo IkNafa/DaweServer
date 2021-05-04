@@ -8,6 +8,8 @@
     <script src="/socket.io/socket.io.js"></script>
     <script>
 
+        var socket = null;
+
         class Lupa{
             constructor(width, height, lineWidth, maxWidth, maxHeight, canvas){
                 this.x = lineWidth;
@@ -100,8 +102,7 @@
 
         window.onload = () => {
             const serverURL = window.location.hostname + ":" +  window.location.port;
-            console.log(serverURL);
-            const socket = io.connect(serverURL, {secure: true});
+            socket = io.connect(serverURL, {secure: true});
             // register phone connection
             socket.emit('desktop-connect');
             socket.on("phone-move",function(data) {
