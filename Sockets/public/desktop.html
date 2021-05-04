@@ -107,8 +107,8 @@
             socket.emit('desktop-connect');
             socket.on("phone-move",function(data) {
                 //console.log("Ha llegado mensaje: " + data);
-                console.log(data);
-                if(data.beta < -10 || data.beta > 10){
+                //console.log(data);
+                if(data < -10 || data> 10){
                     var eventKeyboard = null;
                     if(data.beta < -10){
                         eventKeyboard = new KeyboardEvent("keydown", {charCode:37});
