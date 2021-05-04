@@ -108,32 +108,32 @@
             socket.on("phone-move",function(data) {
                 //console.log("Ha llegado mensaje: " + data);
 
-                if(data > 0){
+                // if(data > 0){
                     
-                    window.dispatchEvent(
-                        new KeyboardEvent('keyup',
-                            {code: 'ArrowRight'
-                        })
-                    );
+                //     window.dispatchEvent(
+                //         new KeyboardEvent('keyup',
+                //             {code: 'ArrowRight'
+                //         })
+                //     );
 
-                    window.dispatchEvent(
-                        new KeyboardEvent('keydown',
-                            {code: 'ArrowRight'
-                        })
-                    );
-                }else{
-                    window.dispatchEvent(
-                        new KeyboardEvent('keyup',
-                            {code: 'ArrowLeft'
-                        })
-                    );
+                //     window.dispatchEvent(
+                //         new KeyboardEvent('keydown',
+                //             {code: 'ArrowRight'
+                //         })
+                //     );
+                // }else{
+                //     window.dispatchEvent(
+                //         new KeyboardEvent('keyup',
+                //             {code: 'ArrowLeft'
+                //         })
+                //     );
 
-                    window.dispatchEvent(
-                        new KeyboardEvent('keydown',
-                            {code: 'ArrowLeft'
-                        })
-                    );
-                }
+                //     window.dispatchEvent(
+                //         new KeyboardEvent('keydown',
+                //             {code: 'ArrowLeft'
+                //         })
+                //     );
+                // }
 
 
 
