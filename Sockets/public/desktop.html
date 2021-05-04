@@ -109,73 +109,47 @@
             socket.on("phone-move",function(data) {
                 //console.log("Ha llegado mensaje: " + data);
                 
-                if(data.beta < -10 && direction != -1){
-                    window.dispatchEvent(
-                        new KeyboardEvent('keyup',
-                            {code: 'ArrowRight'
-                        })
-                    );
-                    window.dispatchEvent(
-                        new KeyboardEvent('keydown',
-                            {code: 'ArrowLeft'
-                        })
-                    );
-                    direction = -1;
-                }else if(data.beta > 10 && direction != 1){
-                    window.dispatchEvent(
-                        new KeyboardEvent('keyup',
-                            {code: 'ArrowLeft'
-                        })
-                    );
-                    window.dispatchEvent(
-                        new KeyboardEvent('keydown',
-                            {code: 'ArrowRight'
-                        })
-                    );
-                    direction = 1;
-                }else if(data.beta > -10 && data.beta < 10){
-                    window.dispatchEvent(
-                        new KeyboardEvent('keyup',
-                            {code: 'ArrowLeft'
-                        })
-                    );
-                    window.dispatchEvent(
-                        new KeyboardEvent('keyup',
-                            {code: 'ArrowRight'
-                        })
-                    );
-                    direction = 0;
-                }
-                
-
-                // if(data > 0){
-                    
+                // if(data.beta < -10 && direction != -1){
                 //     window.dispatchEvent(
                 //         new KeyboardEvent('keyup',
                 //             {code: 'ArrowRight'
                 //         })
                 //     );
-
                 //     window.dispatchEvent(
                 //         new KeyboardEvent('keydown',
-                //             {code: 'ArrowRight'
+                //             {code: 'ArrowLeft'
                 //         })
                 //     );
-                // }else{
+                //     direction = -1;
+                //     console.log(direction);
+                // }else if(data.beta > 10 && direction != 1){
                 //     window.dispatchEvent(
                 //         new KeyboardEvent('keyup',
                 //             {code: 'ArrowLeft'
                 //         })
                 //     );
-
                 //     window.dispatchEvent(
                 //         new KeyboardEvent('keydown',
+                //             {code: 'ArrowRight'
+                //         })
+                //     );
+                //     direction = 1;
+                //     console.log(direction);
+                // }else if(data.beta > -10 && data.beta < 10){
+                //     window.dispatchEvent(
+                //         new KeyboardEvent('keyup',
                 //             {code: 'ArrowLeft'
                 //         })
                 //     );
+                //     window.dispatchEvent(
+                //         new KeyboardEvent('keyup',
+                //             {code: 'ArrowRight'
+                //         })
+                //     );
+                //     direction = 0;
+                //     console.log(direction);
                 // }
-
-
+                
 
             })
 
