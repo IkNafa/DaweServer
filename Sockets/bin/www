@@ -33,18 +33,16 @@ server.on('error', onError);
 server.on('listening', onListening);
 
 
-/*
 const httpsServer = https.createServer({
-  key: fs.readFileSync('key1.pem'),
-  cert: fs.readFileSync('cert1.pem')
+  key: fs.readFileSync('/etc/letsencrypt/live/ikernafarrate.me/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/ikernafarrate.me/fullchain.pem')
 }, app);
 
 httpsServer
     .listen(3030, function () {
-      console.log('Example app listening on port 3030! Go to https://localhost:3030/')
+      console.log('Example app listening on port 3030! Go to https://ikernafarrate.me:3030/')
     });
 
- */
 
 const io = require('socket.io');
 // create a WebSocket listener for the same server
