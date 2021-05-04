@@ -111,6 +111,7 @@
                 if(data < -10 || data> 10){
                     var eventKeyboard = null;
                     if(data.beta < -10){
+                        console.log("Izq");
                         eventKeyboard = new KeyboardEvent("keydown", {charCode:37});
                     }else{
                         eventKeyboard = new KeyboardEvent("keydown", {charCode:39});
