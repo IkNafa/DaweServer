@@ -107,6 +107,19 @@
             socket.emit('desktop-connect');
             socket.on("phone-move",function(data) {
                 console.log("Ha llegado mensaje: " + data);
+
+                window.dispatchEvent(
+                    new KeyboardEvent('keyup',
+                        {code: 'ArrowRight'
+                    })
+                );
+
+                window.dispatchEvent(
+                    new KeyboardEvent('keydown',
+                        {code: 'ArrowRight'
+                    })
+                );
+
             })
 
             var canvas = document.getElementById("canvas");
