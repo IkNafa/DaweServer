@@ -109,46 +109,46 @@
             socket.on("phone-move",function(data) {
                 //console.log("Ha llegado mensaje: " + data);
                 
-                // if(data.beta < -10 && direction != -1){
-                //     window.dispatchEvent(
-                //         new KeyboardEvent('keyup',
-                //             {code: 'ArrowRight'
-                //         })
-                //     );
-                //     window.dispatchEvent(
-                //         new KeyboardEvent('keydown',
-                //             {code: 'ArrowLeft'
-                //         })
-                //     );
-                //     direction = -1;
-                //     console.log(direction);
-                // }else if(data.beta > 10 && direction != 1){
-                //     window.dispatchEvent(
-                //         new KeyboardEvent('keyup',
-                //             {code: 'ArrowLeft'
-                //         })
-                //     );
-                //     window.dispatchEvent(
-                //         new KeyboardEvent('keydown',
-                //             {code: 'ArrowRight'
-                //         })
-                //     );
-                //     direction = 1;
-                //     console.log(direction);
-                // }else if(data.beta > -10 && data.beta < 10){
-                //     window.dispatchEvent(
-                //         new KeyboardEvent('keyup',
-                //             {code: 'ArrowLeft'
-                //         })
-                //     );
-                //     window.dispatchEvent(
-                //         new KeyboardEvent('keyup',
-                //             {code: 'ArrowRight'
-                //         })
-                //     );
-                //     direction = 0;
-                //     console.log(direction);
-                // }
+                if(data.beta < -10 && direction != -1){
+                    window.dispatchEvent(
+                        new KeyboardEvent('keyup',
+                            {code: 'ArrowRight'
+                        })
+                    );
+                    window.dispatchEvent(
+                        new KeyboardEvent('keydown',
+                            {code: 'ArrowLeft'
+                        })
+                    );
+                    direction = -1;
+                    console.log(direction);
+                }else if(data.beta > 10 && direction != 1){
+                    window.dispatchEvent(
+                        new KeyboardEvent('keyup',
+                            {code: 'ArrowLeft'
+                        })
+                    );
+                    window.dispatchEvent(
+                        new KeyboardEvent('keydown',
+                            {code: 'ArrowRight'
+                        })
+                    );
+                    direction = 1;
+                    console.log(direction);
+                }else if(data.beta > -10 && data.beta < 10){
+                    window.dispatchEvent(
+                        new KeyboardEvent('keyup',
+                            {code: 'ArrowLeft'
+                        })
+                    );
+                    window.dispatchEvent(
+                        new KeyboardEvent('keyup',
+                            {code: 'ArrowRight'
+                        })
+                    );
+                    direction = 0;
+                    console.log(direction);
+                }
                 
 
             })
@@ -159,6 +159,7 @@
 
         window.addEventListener("keydown", (event)=>{
             let char = event.char || event.charCode || event.which;
+            console.log(char);
             let has_move = false;
             if(char >=37 && char <= 40){
                 event.preventDefault();
