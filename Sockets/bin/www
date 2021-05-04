@@ -74,13 +74,12 @@ realtimeListener.on('connection', function (socket) {
 
   // receives a connect message from a phone
   socket.on("phone-move", function (data) {
-    console.log("Phone moved:" + data.beta  );
+    //console.log("Phone moved:" + data.beta  );
     if (desktopSocket)
       desktopSocket.emit('phone-move', data.beta);
   });
 
   socket.on("crash",function (){
-    console.log("Hay crush");
     if(mobileSocket) {
       mobileSocket.emit('crash');
     }
