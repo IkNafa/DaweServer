@@ -9,7 +9,6 @@
     <script>
 
         var socket = null;
-        var direction = 0;
 
         class Lupa{
             constructor(width, height, lineWidth, maxWidth, maxHeight, canvas){
@@ -109,45 +108,15 @@
             socket.on("phone-move",function(data) {
                 //console.log("Ha llegado mensaje: " + data);
                 
-                if(data.beta < -10 && direction != -1){
-                    window.dispatchEvent(
-                        new KeyboardEvent('keyup',
-                            {code: 'ArrowRight'
-                        })
-                    );
-                    window.dispatchEvent(
-                        new KeyboardEvent('keydown',
-                            {code: 'ArrowLeft'
-                        })
-                    );
-                    direction = -1;
-                    console.log(direction);
-                }else if(data.beta > 10 && direction != 1){
-                    window.dispatchEvent(
-                        new KeyboardEvent('keyup',
-                            {code: 'ArrowLeft'
-                        })
-                    );
-                    window.dispatchEvent(
-                        new KeyboardEvent('keydown',
-                            {code: 'ArrowRight'
-                        })
-                    );
-                    direction = 1;
-                    console.log(direction);
-                }else if(data.beta > -10 && data.beta < 10){
-                    window.dispatchEvent(
-                        new KeyboardEvent('keyup',
-                            {code: 'ArrowLeft'
-                        })
-                    );
-                    window.dispatchEvent(
-                        new KeyboardEvent('keyup',
-                            {code: 'ArrowRight'
-                        })
-                    );
-                    direction = 0;
-                    console.log(direction);
+                if(data.beta < -10 && data.beta > 10){
+                    var eventKeyboard = null;
+                    if(data.beta < -10){
+                        eventKeyboard = new KeyboardEvent("keydown", {charCode:37});
+                    }else{
+                        eventKeyboard = new KeyboardEvent("keydown", {charCode:39});
+                    }
+
+                    window.dispatchEvent(eventKeyboard)
                 }
                 
 
