@@ -1,0 +1,1746 @@
+
+> express_sessions@1.0.0 start
+> node bin/www
+
+[0mGET / [36m304[0m 14.541 ms - -[0m
+[0mGET /stylesheets/style.css [32m200[0m 3.107 ms - 124[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express-session/index.js:502:7
+    at /home/dawe/DaweServer/express_sessions/node_modules/connect-mongo/build/main/lib/MongoStore.js:218:17
+[0mGET /favicon.ico [33m404[0m 20.165 ms - 1068[0m
+[0mGET / [32m200[0m 3.418 ms - 11225[0m
+[0mGET /stylesheets/style.css [32m200[0m 0.784 ms - 124[0m
+[0mGET / [36m304[0m 3.542 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.492 ms - -[0m
+[0mGET / [36m304[0m 3.795 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 1.758 ms - -[0m
+[0mGET / [32m200[0m 1.245 ms - 11225[0m
+[0mGET /stylesheets/style.css [32m200[0m 0.770 ms - 124[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express-session/index.js:502:7
+    at /home/dawe/DaweServer/express_sessions/node_modules/connect-mongo/build/main/lib/MongoStore.js:218:17
+[0mGET /favicon.ico [33m404[0m 5.608 ms - 1068[0m
+/getToken
+Successfully fetched user data: { uid: 'J48xHTVe4YZWzzGlaHODRBfAson2',
+  email: 'iknafa@hotmail.com',
+  emailVerified: false,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 21 Apr 2021 13:27:54 GMT',
+     creationTime: 'Thu, 15 Apr 2021 17:58:22 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Thu, 15 Apr 2021 17:58:22 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'iknafa@hotmail.com',
+       displayName: undefined,
+       email: 'iknafa@hotmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 320.844 ms - 18[0m
+[0mGET / [36m302[0m 6.009 ms - 58[0m
+[0mGET /users/ [32m200[0m 56.791 ms - 2040[0m
+[0mGET /js/main.js [32m200[0m 0.700 ms - 897[0m
+[0mGET / [36m302[0m 3.441 ms - 58[0m
+[0mGET /users/ [32m200[0m 8.269 ms - 2040[0m
+[0mGET /js/main.js [36m304[0m 0.807 ms - -[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express-session/index.js:502:7
+    at /home/dawe/DaweServer/express_sessions/node_modules/connect-mongo/build/main/lib/MongoStore.js:218:17
+[0mGET /favicon.ico [33m404[0m 3.228 ms - 1068[0m
+[0mGET /users/ [36m304[0m 5.010 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.570 ms - -[0m
+[0mGET /logout [36m302[0m 4.727 ms - 46[0m
+[0mGET / [32m200[0m 5.036 ms - 11225[0m
+[0mGET /stylesheets/style.css [32m200[0m 0.648 ms - 124[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express-session/index.js:502:7
+    at /home/dawe/DaweServer/express_sessions/node_modules/connect-mongo/build/main/lib/MongoStore.js:218:17
+[0mGET /favicon.ico [33m404[0m 3.051 ms - 1068[0m
+/getToken
+Successfully fetched user data: { uid: 'J48xHTVe4YZWzzGlaHODRBfAson2',
+  email: 'iknafa@hotmail.com',
+  emailVerified: false,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 21 Apr 2021 13:27:54 GMT',
+     creationTime: 'Thu, 15 Apr 2021 17:58:22 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Thu, 15 Apr 2021 17:58:22 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'iknafa@hotmail.com',
+       displayName: undefined,
+       email: 'iknafa@hotmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 176.497 ms - 18[0m
+[0mGET / [36m302[0m 2.652 ms - 58[0m
+[0mGET /users/ [36m304[0m 4.718 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.423 ms - -[0m
+[0mGET /logout [36m302[0m 6.061 ms - 46[0m
+[0mGET / [32m200[0m 2.874 ms - 11225[0m
+[0mGET /stylesheets/style.css [32m200[0m 0.741 ms - 124[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express-session/index.js:502:7
+    at /home/dawe/DaweServer/express_sessions/node_modules/connect-mongo/build/main/lib/MongoStore.js:218:17
+[0mGET /favicon.ico [33m404[0m 3.125 ms - 1068[0m
+[0mGET / [36m304[0m 3.643 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.417 ms - -[0m
+[0mGET / [36m304[0m 4.346 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.517 ms - -[0m
+[0mGET / [36m304[0m 4.266 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.525 ms - -[0m
+[0mGET / [36m304[0m 4.167 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.569 ms - -[0m
+[0mGET / [32m200[0m 2.743 ms - 11225[0m
+[0mGET /stylesheets/style.css [32m200[0m 0.807 ms - 124[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express-session/index.js:502:7
+    at /home/dawe/DaweServer/express_sessions/node_modules/connect-mongo/build/main/lib/MongoStore.js:218:17
+[0mGET /favicon.ico [33m404[0m 3.099 ms - 1068[0m
+[0mGET / [36m304[0m 3.482 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.394 ms - -[0m
+[0mGET / [32m200[0m 5.182 ms - 11225[0m
+[0mGET /stylesheets/style.css [32m200[0m 2.946 ms - 124[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express-session/index.js:502:7
+    at /home/dawe/DaweServer/express_sessions/node_modules/connect-mongo/build/main/lib/MongoStore.js:218:17
+[0mGET /favicon.ico [33m404[0m 26.050 ms - 1068[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: false,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 249.555 ms - 18[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:25:06 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 182.893 ms - 18[0m
+[0mGET / [36m302[0m 3.329 ms - 58[0m
+[0mGET /users/ [32m200[0m 7.294 ms - 2041[0m
+[0mGET /js/main.js [32m200[0m 1.016 ms - 897[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:47:12)
+[0mGET /users/find/607c61ceb106fa32a2c50b11 [33m404[0m 3.774 ms - 1082[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:47:12)
+[0mGET /users/find/607c61ceb106fa32a2c50b11 [33m404[0m 3.579 ms - 1082[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:47:12)
+[0mPOST /users/add [33m404[0m 4.969 ms - 1082[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:47:12)
+[0mDELETE /users/delete/607c6173b106fa32a2c50b0f [33m404[0m 3.646 ms - 1082[0m
+[0mGET /users/ [36m304[0m 5.163 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.911 ms - -[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:47:12)
+[0mDELETE /users/delete/607c619fb106fa32a2c50b10 [33m404[0m 3.219 ms - 1082[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:47:12)
+[0mPOST /users/add [33m404[0m 3.193 ms - 1082[0m
+[0mGET /logout [36m302[0m 45.507 ms - 46[0m
+[0mGET / [32m200[0m 3.102 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.514 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:25:06 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 164.407 ms - 18[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:27:38 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 166.917 ms - 18[0m
+[0mGET / [36m302[0m 2.602 ms - 58[0m
+[0mGET /users/ [36m304[0m 5.480 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.439 ms - -[0m
+[0mGET /logout [36m302[0m 3.759 ms - 46[0m
+[0mGET / [32m200[0m 3.165 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.539 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:27:38 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 171.815 ms - 18[0m
+[0mGET /email-password.html [32m200[0m 0.706 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.380 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:52:09 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 167.795 ms - 18[0m
+[0mGET / [36m302[0m 2.489 ms - 58[0m
+[0mGET /users/ [36m304[0m 4.890 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.558 ms - -[0m
+[0mGET /logout [36m302[0m 2.930 ms - 46[0m
+[0mGET / [32m200[0m 2.369 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.390 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:52:09 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 163.975 ms - 18[0m
+[0mGET / [36m302[0m 2.717 ms - 58[0m
+[0mGET /users/ [36m304[0m 5.467 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.529 ms - -[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:47:12)
+[0mDELETE /users/delete/605f16bdecdefe2e138eb85c [33m404[0m 3.598 ms - 1082[0m
+[0mGET /logout [36m302[0m 3.514 ms - 46[0m
+[0mGET / [32m200[0m 3.064 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.526 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:52:09 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 154.947 ms - 18[0m
+[0mGET / [36m302[0m 2.384 ms - 58[0m
+[0mGET /users/ [36m304[0m 5.551 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.409 ms - -[0m
+[0mGET /logout [36m302[0m 3.028 ms - 46[0m
+[0mGET / [32m200[0m 3.310 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.370 ms - -[0m
+[0mGET / [36m304[0m 3.020 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.426 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:54:50 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 156.530 ms - 18[0m
+[0mGET / [36m302[0m 2.099 ms - 58[0m
+[0mGET /users/ [36m304[0m 5.342 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.567 ms - -[0m
+[0mGET /logout [36m302[0m 3.266 ms - 46[0m
+[0mGET / [32m200[0m 2.917 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.549 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:54:50 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 181.297 ms - 18[0m
+[0mGET / [36m302[0m 2.311 ms - 58[0m
+[0mGET /users/ [36m304[0m 4.255 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.392 ms - -[0m
+[0mGET /email-password.html [36m304[0m 0.639 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.386 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:54:50 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 158.985 ms - 18[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:54:50 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 166.208 ms - 18[0m
+[0mGET /email-password.html [36m304[0m 0.541 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.558 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:54:50 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 174.626 ms - 18[0m
+[0mGET / [36m302[0m 3.266 ms - 58[0m
+[0mGET /users/ [36m304[0m 4.192 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.563 ms - -[0m
+[0mGET /logout [36m302[0m 4.038 ms - 46[0m
+[0mGET / [32m200[0m 2.393 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.493 ms - -[0m
+[0mGET / [36m304[0m 3.017 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.425 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:56:53 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 168.956 ms - 18[0m
+[0mGET / [36m302[0m 2.397 ms - 58[0m
+[0mGET /users/ [36m304[0m 4.959 ms - -[0m
+[0mGET /js/main.js [36m304[0m 2.471 ms - -[0m
+[0mGET /logout [36m302[0m 3.444 ms - 46[0m
+[0mGET / [32m200[0m 2.790 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.461 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:56:53 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 164.589 ms - 18[0m
+[0mGET /users/ [36m304[0m 5.958 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.553 ms - -[0m
+[0mGET /logout [36m302[0m 2.994 ms - 46[0m
+[0mGET / [36m304[0m 3.731 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.534 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Mon, 26 Apr 2021 16:56:53 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 429.104 ms - 18[0m
+[0mGET / [36m302[0m 2.180 ms - 58[0m
+[0mGET /users/ [36m304[0m 3.989 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.468 ms - -[0m
+[0mGET / [36m302[0m 2.199 ms - 58[0m
+[0mGET /users/ [36m304[0m 3.973 ms - -[0m
+[0mGET /js/main.js [36m304[0m 1.493 ms - -[0m
+[0mGET /logout [36m302[0m 3.053 ms - 46[0m
+[0mGET / [32m200[0m 2.957 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.492 ms - -[0m
+[0mGET / [32m200[0m 1.332 ms - 11225[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at session (/home/dawe/DaweServer/express_sessions/node_modules/express-session/index.js:475:7)
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+[0mPOST /sdk [33m404[0m 1.100 ms - 1096[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at session (/home/dawe/DaweServer/express_sessions/node_modules/express-session/index.js:475:7)
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+[0mGET /nmaplowercheck1619461268 [33m404[0m 2.099 ms - 1096[0m
+[0mGET / [32m200[0m 4.333 ms - 11225[0m
+[0mGET / [32m200[0m 0.964 ms - 11225[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at session (/home/dawe/DaweServer/express_sessions/node_modules/express-session/index.js:475:7)
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+[0mGET /HNAP1 [33m404[0m 1.935 ms - 1096[0m
+[0mGET / [32m200[0m 1.950 ms - 11225[0m
+[0mGET / [36m304[0m 3.641 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.667 ms - -[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express-session/index.js:502:7
+    at /home/dawe/DaweServer/express_sessions/node_modules/connect-mongo/build/main/lib/MongoStore.js:218:17
+[0mGET /favicon.ico [33m404[0m 5.665 ms - 1068[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:21:41 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 224.942 ms - 18[0m
+[0mGET /email-password.html [36m304[0m 0.458 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.636 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:21:41 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 171.889 ms - 18[0m
+[0mGET / [36m302[0m 2.425 ms - 58[0m
+[0mGET /users/ [36m304[0m 8.010 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.402 ms - -[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:47:12)
+[0mGET /users/find/605e3144eceee2bb87a18500 [33m404[0m 3.217 ms - 1082[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:47:12)
+[0mPOST /users/add [33m404[0m 2.729 ms - 1082[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:47:12)
+[0mDELETE /users/delete/607c619fb106fa32a2c50b10 [33m404[0m 2.562 ms - 1082[0m
+[0mGET /users/ [36m304[0m 4.888 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.430 ms - -[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:47:12)
+[0mPOST /users/add [33m404[0m 3.193 ms - 1082[0m
+[0mGET /logout [36m302[0m 3.583 ms - 46[0m
+[0mGET / [32m200[0m 2.991 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.423 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:21:41 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 164.124 ms - 18[0m
+[0mGET / [36m302[0m 2.728 ms - 58[0m
+[0mGET /users/ [36m304[0m 6.174 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.593 ms - -[0m
+[0mGET /logout [36m302[0m 3.044 ms - 46[0m
+[0mGET / [32m200[0m 2.544 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.508 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:21:41 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 161.923 ms - 18[0m
+[0mGET / [36m302[0m 2.176 ms - 58[0m
+[0mGET /users/ [36m304[0m 3.849 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.684 ms - -[0m
+[0mGET /logout [36m302[0m 2.676 ms - 46[0m
+[0mGET / [32m200[0m 2.416 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.433 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:21:41 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 175.753 ms - 18[0m
+[0mGET / [36m302[0m 2.353 ms - 58[0m
+[0mGET /users/ [36m304[0m 5.274 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.402 ms - -[0m
+[0mGET /logout [36m302[0m 3.028 ms - 46[0m
+[0mGET / [32m200[0m 2.494 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.377 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:21:41 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 173.451 ms - 18[0m
+[0mGET / [36m302[0m 2.005 ms - 58[0m
+[0mGET /users/ [36m304[0m 4.193 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.411 ms - -[0m
+[0mGET /logout [36m302[0m 3.601 ms - 46[0m
+[0mGET / [32m200[0m 2.527 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.541 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:21:41 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 191.649 ms - 18[0m
+/getToken
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:47:11 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 168.830 ms - 18[0m
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:47:11 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 162.641 ms - 18[0m
+[0mGET / [36m302[0m 2.523 ms - 58[0m
+[0mGET /users/ [36m304[0m 4.971 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.390 ms - -[0m
+[0mGET /logout [36m302[0m 2.897 ms - 46[0m
+[0mGET / [32m200[0m 2.324 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.409 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:47:11 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 165.172 ms - 18[0m
+[0mGET /email-password.html [36m304[0m 0.512 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.471 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:47:11 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 188.284 ms - 18[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:47:11 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 168.588 ms - 18[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:47:11 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 162.986 ms - 18[0m
+[0mGET /email-password.html [36m304[0m 0.482 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.375 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:47:11 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 172.233 ms - 18[0m
+[0mGET / [36m302[0m 2.276 ms - 58[0m
+[0mGET /users/ [36m304[0m 3.911 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.397 ms - -[0m
+[0mGET /users/ [36m304[0m 3.859 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.409 ms - -[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:47:12)
+[0mDELETE /users/delete/605e3144eceee2bb87a18500 [33m404[0m 2.984 ms - 1082[0m
+[0mGET /logout [36m302[0m 2.836 ms - 46[0m
+[0mGET / [32m200[0m 2.274 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.397 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:47:11 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 176.262 ms - 18[0m
+[0mGET / [36m302[0m 3.035 ms - 58[0m
+[0mGET /users/ [36m304[0m 4.082 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.545 ms - -[0m
+[0mGET /logout [36m302[0m 2.938 ms - 46[0m
+[0mGET / [32m200[0m 2.470 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.392 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:47:11 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 189.176 ms - 18[0m
+[0mGET / [36m302[0m 2.158 ms - 58[0m
+[0mGET /users/ [36m304[0m 5.559 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.451 ms - -[0m
+[0mGET /logout [36m302[0m 5.078 ms - 46[0m
+[0mGET / [32m200[0m 2.355 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.440 ms - -[0m
+[0mGET / [36m304[0m 3.640 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.500 ms - -[0m
+[0mGET /users/ [32m200[0m 2.117 ms - -[0m
+[0mGET / [36m304[0m 6.440 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.508 ms - -[0m
+[0mGET /email-password.html [36m304[0m 0.528 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.585 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:49:15 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 158.252 ms - 18[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 17:49:15 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 169.062 ms - 18[0m
+[0mGET / [36m302[0m 2.554 ms - 58[0m
+[0mGET /users/ [32m200[0m 5.193 ms - 2041[0m
+[0mGET /js/main.js [36m304[0m 0.377 ms - -[0m
+[0mGET /logout [36m302[0m 3.594 ms - 46[0m
+[0mGET / [32m200[0m 2.275 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.589 ms - -[0m
+[0mGET / [36m304[0m 4.046 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.571 ms - -[0m
+[0mGET / [36m304[0m 3.079 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.430 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 18:07:26 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 177.488 ms - 18[0m
+[0mGET / [36m302[0m 3.025 ms - 58[0m
+[0mGET /users/ [36m304[0m 4.028 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.594 ms - -[0m
+[0mGET /logout [36m302[0m 2.711 ms - 46[0m
+[0mGET / [32m200[0m 2.291 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.516 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 18:07:26 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 179.491 ms - 18[0m
+[0mGET / [36m302[0m 3.296 ms - 58[0m
+[0mGET /users/ [36m304[0m 4.706 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.393 ms - -[0m
+[0mGET /logout [36m302[0m 2.792 ms - 46[0m
+[0mGET / [32m200[0m 2.369 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.469 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 18:07:26 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 172.745 ms - 18[0m
+[0mGET /users/ [36m304[0m 4.888 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.386 ms - -[0m
+[0mGET /logout [36m302[0m 2.909 ms - 46[0m
+[0mGET / [36m304[0m 3.273 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.411 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 18:07:26 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 248.154 ms - 18[0m
+[0mGET /users/ [36m304[0m 6.686 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.432 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.403 ms - -[0m
+[0mGET /users/ [36m304[0m 20.265 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.367 ms - -[0m
+[0mGET /users/ [36m304[0m 3.986 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.430 ms - -[0m
+[0mGET /logout [36m302[0m 3.710 ms - 46[0m
+[0mGET / [36m304[0m 3.144 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 1.702 ms - -[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express-session/index.js:502:7
+    at /home/dawe/DaweServer/express_sessions/node_modules/connect-mongo/build/main/lib/MongoStore.js:218:17
+[0mGET /login [33m404[0m 2.852 ms - 1068[0m
+[0mGET / [36m304[0m 3.011 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.393 ms - -[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express-session/index.js:502:7
+    at /home/dawe/DaweServer/express_sessions/node_modules/connect-mongo/build/main/lib/MongoStore.js:218:17
+[0mGET /admin [33m404[0m 2.937 ms - 1068[0m
+[0mGET / [36m304[0m 3.007 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.374 ms - -[0m
+[0mGET / [36m304[0m 2.803 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.416 ms - -[0m
+/getToken
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 18:24:19 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 245.346 ms - 18[0m
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 18:24:19 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 237.674 ms - 18[0m
+[0mGET /users/ [36m304[0m 5.231 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.383 ms - -[0m
+[0mGET /logout [36m302[0m 2.741 ms - 46[0m
+[0mGET / [36m304[0m 2.971 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.420 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 18:24:19 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 230.274 ms - 18[0m
+[0mGET /users/ [36m304[0m 4.100 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.553 ms - -[0m
+[0mGET /logout [36m302[0m 3.777 ms - 46[0m
+[0mGET / [36m304[0m 3.199 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 1.069 ms - -[0m
+[0mGET / [36m304[0m 2.994 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.410 ms - -[0m
+[0mGET /users/ [32m200[0m 2.568 ms - -[0m
+[0mGET /users/ [32m200[0m 2.759 ms - -[0m
+[0mGET /email-password.html [36m304[0m 0.389 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 3.138 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 18:24:19 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 213.441 ms - 18[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 18:24:19 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 233.786 ms - 18[0m
+[0mGET / [36m302[0m 2.181 ms - 58[0m
+[0mGET /users/ [32m200[0m 4.258 ms - 2041[0m
+[0mGET /js/main.js [36m304[0m 0.382 ms - -[0m
+[0mGET /logout [36m302[0m 2.903 ms - 46[0m
+[0mGET / [32m200[0m 2.258 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.379 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 18:24:19 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 245.629 ms - 18[0m
+[0mGET /users/ [36m304[0m 5.624 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.373 ms - -[0m
+[0mGET /users/ [36m304[0m 4.892 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.395 ms - -[0m
+/getToken
+Successfully fetched user data: { uid: 'aobsOTztLYZQuOtdwjfBKstc9lQ2',
+  email: 'ainhoawrk@gmail.com',
+  emailVerified: true,
+  displayName: undefined,
+  photoURL: undefined,
+  phoneNumber: undefined,
+  disabled: false,
+  metadata:
+   { lastSignInTime: 'Wed, 28 Apr 2021 18:24:19 GMT',
+     creationTime: 'Mon, 26 Apr 2021 16:19:10 GMT' },
+  passwordHash: undefined,
+  passwordSalt: undefined,
+  customClaims: undefined,
+  tokensValidAfterTime: 'Mon, 26 Apr 2021 16:19:10 GMT',
+  tenantId: undefined,
+  providerData:
+   [ { uid: 'ainhoawrk@gmail.com',
+       displayName: undefined,
+       email: 'ainhoawrk@gmail.com',
+       photoURL: undefined,
+       providerId: 'password',
+       phoneNumber: undefined } ] }
+[0mPOST /getToken [32m200[0m 216.578 ms - 18[0m
+[0mGET / [36m302[0m 2.423 ms - 58[0m
+[0mGET /users/ [36m304[0m 5.184 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.411 ms - -[0m
+[0mGET /users/ [36m304[0m 3.816 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.424 ms - -[0m
+[0mGET /users/ [36m304[0m 4.147 ms - -[0m
+[0mGET /js/main.js [36m304[0m 0.435 ms - -[0m
+[0mGET /logout [36m302[0m 2.756 ms - 46[0m
+[0mGET / [32m200[0m 2.368 ms - 11225[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.426 ms - -[0m
+[0mGET / [36m304[0m 3.546 ms - -[0m
+[0mGET /stylesheets/style.css [36m304[0m 0.415 ms - -[0m
+[0mGET /users/ [32m200[0m 2.022 ms - -[0m
+[0mGET / [32m200[0m 3.646 ms - 11225[0m
+[0mGET /stylesheets/style.css [32m200[0m 1.712 ms - 124[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express-session/index.js:502:7
+    at /home/dawe/DaweServer/express_sessions/node_modules/connect-mongo/build/main/lib/MongoStore.js:218:17
+[0mGET /favicon.ico [33m404[0m 13.076 ms - 1068[0m
+[0mGET / [32m200[0m 1.709 ms - 11225[0m
+[0mGET / [32m200[0m 1.425 ms - 11225[0m
+[0mGET / [32m200[0m 5.191 ms - 11225[0m
+[0mGET / [32m200[0m 3.253 ms - 11225[0m
+[0mGET / [32m200[0m 6.337 ms - 11225[0m
+[0mGET / [32m200[0m 7.479 ms - 11225[0m
+[0mGET / [32m200[0m 8.304 ms - 11225[0m
+[0mGET / [32m200[0m 12.238 ms - 11225[0m
+[0mGET / [32m200[0m 13.552 ms - 11225[0m
+[0mGET /stylesheets/style.css [32m200[0m 1.492 ms - 124[0m
+NotFoundError: Not Found
+    at /home/dawe/DaweServer/express_sessions/app.js:27:8
+    at Layer.handle [as handle_request] (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:317:13)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:275:10)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:635:15
+    at next (/home/dawe/DaweServer/express_sessions/node_modules/express/lib/router/index.js:260:14)
+    at /home/dawe/DaweServer/express_sessions/node_modules/express-session/index.js:502:7
+    at /home/dawe/DaweServer/express_sessions/node_modules/connect-mongo/build/main/lib/MongoStore.js:218:17
+[0mGET /favicon.ico [33m404[0m 26.915 ms - 1068[0m
+[0mGET / [32m200[0m 7.139 ms - 11225[0m

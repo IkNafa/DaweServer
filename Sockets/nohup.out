@@ -1,0 +1,88 @@
+
+> sockets@0.0.0 start
+> node ./bin/www
+
+
+> sockets@0.0.0 start
+> node ./bin/www
+
+[0mGET / [32m200 [0m12.280 ms - 207[0m
+[0mGET /stylesheets/style.css [32m200 [0m4.409 ms - 437[0m
+[0mGET / [36m304 [0m1.771 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.069 ms - -[0m
+[0mGET / [36m304 [0m0.966 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.471 ms - -[0m
+[0mGET / [36m304 [0m0.823 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.418 ms - -[0m
+[0mGET /desktop.html [32m200 [0m0.791 ms - 4828[0m
+[0mGET /spritesheet.png [32m200 [0m0.918 ms - 25957[0m
+Desktop Connected
+
+> sockets@0.0.0 start
+> sudo node ./bin/www
+
+Example app listening on port 3030! Go to https://ikernafarrate.me:3030/
+[0mGET /desktop.html [36m304 [0m6.932 ms - -[0m
+[0mGET /spritesheet.png [36m304 [0m1.219 ms - -[0m
+Desktop Connected
+[0mGET /desktop.html [36m304 [0m0.549 ms - -[0m
+[0mGET /spritesheet.png [36m304 [0m0.400 ms - -[0m
+Desktop Connected
+[0mGET /mobile.html [32m200 [0m3.962 ms - 1472[0m
+[0mGET /javascripts/index.js [32m200 [0m1.028 ms - 1191[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.466 ms - -[0m
+Phone Connected
+[0mGET /desktop.html [36m304 [0m0.402 ms - -[0m
+Desktop Connected
+[0mGET /spritesheet.png [36m304 [0m0.368 ms - -[0m
+[0mGET /mobile.html [36m304 [0m0.416 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.396 ms - -[0m
+[0mGET /javascripts/index.js [36m304 [0m0.296 ms - -[0m
+Phone Connected
+[0mGET / [32m200 [0m28.470 ms - 207[0m
+[0mGET / [32m200 [0m1.912 ms - 207[0m
+[0mGET /desktop.html [32m200 [0m5.633 ms - 5019[0m
+[0mGET /spritesheet.png [32m200 [0m2.605 ms - 25957[0m
+[0mGET /favicon.ico [33m404 [0m6.565 ms - 993[0m
+Desktop Connected
+[0mGET /mobile.html [32m200 [0m0.936 ms - 1472[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.176 ms - 437[0m
+[0mGET /javascripts/index.js [32m200 [0m1.417 ms - 1191[0m
+[0mGET /favicon.ico [33m404 [0m2.088 ms - 993[0m
+Phone Connected
+[0mGET /desktop.html [36m304 [0m0.805 ms - -[0m
+[0mGET /spritesheet.png [36m304 [0m0.688 ms - -[0m
+Desktop Connected
+[0mGET /desktop.html [32m200 [0m1.079 ms - 5019[0m
+[0mGET /spritesheet.png [32m200 [0m0.897 ms - 25957[0m
+Desktop Connected
+[0mGET /mobile.html [32m200 [0m0.952 ms - 1472[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.647 ms - 437[0m
+[0mGET /javascripts/index.js [32m200 [0m0.565 ms - 1191[0m
+Phone Connected
+[0mGET /desktop.html [32m200 [0m1.475 ms - 5019[0m
+[0mGET /spritesheet.png [32m200 [0m0.841 ms - 25957[0m
+Desktop Connected
+[0mGET /mobile.html [36m304 [0m0.431 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.620 ms - -[0m
+[0mGET /javascripts/index.js [36m304 [0m0.344 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m1.910 ms - 993[0m
+Phone Connected
+[0mGET / [32m200 [0m5.069 ms - 207[0m
+[0mGET / [32m200 [0m5.662 ms - 207[0m
+[0mGET /desktop.html [32m200 [0m1.558 ms - 5019[0m
+Desktop Connected
+[0mGET /spritesheet.png [36m304 [0m0.427 ms - -[0m
+[0mGET / [32m200 [0m4.032 ms - 207[0m
+[0mGET / [32m200 [0m2.826 ms - 207[0m
+[0mGET / [32m200 [0m0.957 ms - 207[0m
+[0mGET / [32m200 [0m13.257 ms - 207[0m
+[0mGET / [32m200 [0m1.005 ms - 207[0m
+[0mGET / [32m200 [0m2.946 ms - 207[0m
+[0mGET /mobile.html [32m200 [0m2.588 ms - 1472[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.292 ms - 437[0m
+[0mGET /javascripts/index.js [32m200 [0m1.199 ms - 1191[0m
+[0mGET /favicon.ico [33m404 [0m2.446 ms - 993[0m
+Phone Connected
+[0mGET / [32m200 [0m4.528 ms - 207[0m
+[0mGET / [32m200 [0m2.754 ms - 207[0m

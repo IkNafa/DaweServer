@@ -3,3 +3,15 @@
 > serve ./public
 
 INFO: Accepting connections at http://localhost:5000
+
+> dawe@1.0.0 start
+> serve ./public
+
+INFO: Accepting connections at http://localhost:5000
+
+INFO: Gracefully shutting down. Please wait...
+
+> dawe@1.0.0 start
+> serve ./public
+
+INFO: Accepting connections at http://localhost:5000
